@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim Vogelzangs Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i> Portfolio Jim Vogelzangs
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Over</a></li>
+                <li><a href="#skills">Vaardigheden</a></li>
+                <li><a href="#experience">Ervaring</a></li>
+                <li><a href="#projects">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-switcher" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <img id="profile-photo" src="profiel.jpg" alt="Professionele Profielfoto" class="profile-photo">
+                <div class="profile-glow"></div>
+            </div>
+            <h1 class="name">Jim Vogelzangs</h1>
+            <p class="tagline">Software Developer & Web Enthousiast</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Projecten</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Jaren Erv</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Toewijding</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Bekijk Mijn Werk</a>
+                <a href="#contact" class="btn btn-secondary">Neem Contact Op</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Over Mij</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Ik ben Jim Vogelzangs, een gemotiveerde software developer met een sterke interesse in webontwikkeling en softwareontwikkeling. Mijn specialisatie ligt in het bouwen en verbeteren van webapplicaties, waarbij ik oog heb voor zowel functionaliteit als gebruiksvriendelijkheid.</p>
+                    <p>Ik ben leergierig, sta open voor nieuwe technologieën en ben voortdurend bezig mijn kennis uit te breiden met nieuwe programmeertalen en tools. Ik heb ervaring opgedaan tijdens mijn stage bij Ictoria waar ik websites heb ontwikkeld met WordPress.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-code"></i>
+                            <span>Webontwikkeling Specialist</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>MBO Niveau 4 Student</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Stage Ervaring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Kerncompetenties</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Webontwikkeling</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Andere Programmeertalen</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 50%"></div>
+                        </div>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C#</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 45%"></div>
+                        </div>
+                        <span class="skill-percent">45%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 40%"></div>
+                        </div>
+                        <span class="skill-percent">40%</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools en Frameworks</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">WordPress</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Visual Studio Code</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Visual Studio</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Professionele Ervaring</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Development Stagiair</h3>
+                        <span class="company">Ictoria</span>
+                        <span class="period">augustus 2024 - februari 2025</span>
+                        <p>Ontwikkelen en onderhouden van websites met WordPress. Samenwerken met collega’s aan verschillende klantprojecten. Toegepast gebruik van HTML, CSS, PHP en JavaScript. Ervaring opgedaan met werken in een professionele werkomgeving.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Winkelmedewerker</h3>
+                        <span class="company">Nettorama Supermarkt</span>
+                        <span class="period">november 2022 - heden</span>
+                        <p>Verantwoordelijk voor het vullen van vakken en het onderhouden van orde in de winkel en het magazijn. Samenwerken met collega’s om een efficiënte en klantvriendelijke winkelervaring te bieden.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Development (MBO niveau 4)</h3>
+                        <span class="company">ROC Ter AA – Helmond</span>
+                        <span class="period">2022 - 2025</span>
+                        <p>Opleiding gericht op webontwikkeling en softwareontwikkeling. Belangrijkste vakken & technologieën: HTML, CSS, PHP, JavaScript, Python, C#, C++, MySQL, GitHub.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Uitgelichte Projecten</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="streamix.png" alt="Streamix Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/JimVogelzangs2/Streamix" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Streamix</h3>
+                        <p>Ik heb samen met een klasgenoot een website gemaakt dat vergelijkbaar is met YouTube. Dit was de eerste keer dat we Python gebruikt hebben voor webontwikkeling.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="tictacchess.png" alt="TicTacChess Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/JimVogelzangs2/Chess_Jim" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>TicTacChess</h3>
+                        <p>Ik heb in Visual Studio Code een applicatie gemaakt waarin je een combinatie van TicTacToe en schaken kan spelen. Een unieke twist op klassieke spellen.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>Visual Studio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="laravel.png" alt="Laravel Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/JimVogelzangs2/Laravel_Project" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Laravel Project</h3>
+                        <span class="project-status">In Ontwikkeling</span>
+                        <p>Een webapplicatie ontwikkeld met Laravel framework. Dit project toont mijn vaardigheden in moderne PHP ontwikkeling en het gebruik van Blade templates voor dynamische webpagina's.</p>
+                        <div class="project-tech">
+                            <span>Blade</span>
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="quizmester2.png" alt="Quizmester2 Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/JimVogelzangs2/Quizmester2" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quizmester2</h3>
+                        <span class="project-status">In Ontwikkeling</span>
+                        <p>Een interactieve quiz applicatie ontwikkeld in C# met database integratie. Dit project demonstreert mijn kennis van desktop applicatie ontwikkeling en database management.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>TSQL</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info-full">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>91766@roc-teraa.nl</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefoon</h3>
+                            <p>06-29784328</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adres</h3>
+                            <p>Patrijsstraat 10, De Rips</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Opleiding</h3>
+                            <p>ROC Ter AA – Helmond – Software Development</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jim-vogelzangs-3a6a93310" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/JimVogelzangs2" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i> Jim Vogelzangs Portfolio
+                </div>
+                <p>&copy; 2024 Jim Vogelzangs. Alle rechten voorbehouden. Gemaakt met passie en precisie.</p>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">Over</a>
+                    <a href="#projects">Projecten</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
