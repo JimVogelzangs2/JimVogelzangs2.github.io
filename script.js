@@ -459,28 +459,7 @@ window.addEventListener('scroll', () => {
     scrollProgress.style.width = scrollPercent + '%';
 });
 
-// Profile Photo Upload Functionality
-const profilePhoto = document.getElementById('profile-photo');
-const fileInput = document.createElement('input');
-fileInput.type = 'file';
-fileInput.accept = 'image/*';
-fileInput.style.display = 'none';
-document.body.appendChild(fileInput);
-
-profilePhoto.addEventListener('click', () => {
-    fileInput.click();
-});
-
-fileInput.addEventListener('change', (e) => {
-    const file = e.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            profilePhoto.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-    }
-});
+// Profile Photo Upload Functionality - Disabled to prevent editing
 
 // Parallax Effect for Hero Section
 window.addEventListener('scroll', () => {
