@@ -406,7 +406,9 @@ const counterObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const target = entry.target;
             const count = parseInt(target.textContent.replace(/[^\d]/g, ''));
-            animateCounter(target, 0, count, 2000);
+            if (!isNaN(count)) {
+                animateCounter(target, 0, count, 2000);
+            }
         }
     });
 }, { threshold: 0.5 });
@@ -417,12 +419,17 @@ statNumbers.forEach(stat => {
 
 function animateCounter(element, start, end, duration) {
     let startTime = null;
+    const label = element.nextElementSibling ? element.nextElementSibling.textContent : '';
 
     function animation(currentTime) {
         if (startTime === null) startTime = currentTime;
         const progress = Math.min((currentTime - startTime) / duration, 1);
         const value = Math.floor(progress * (end - start) + start);
-        element.textContent = value + (element.textContent.includes('%') ? '%' : '+');
+        if (label.includes('Ervaring')) {
+            element.textContent = value;
+        } else {
+            element.textContent = value + (element.textContent.includes('%') ? '%' : '+');
+        }
         if (progress < 1) {
             requestAnimationFrame(animation);
         }
