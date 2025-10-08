@@ -621,11 +621,12 @@ body::before {
 
 .skill-percent {
     position: absolute;
-    right: 0;
-    top: -25px;
-    font-size: 0.9em;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
     font-weight: 600;
-    color: var(--accent-color);
+    color: white;
 }
 
 /* Experience section */
@@ -735,6 +736,7 @@ body::before {
     box-shadow: 0 15px 35px var(--shadow);
     transition: all 0.3s ease;
     position: relative;
+    min-height: 450px;
 }
 
 .project-card:hover {
